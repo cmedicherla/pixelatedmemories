@@ -1,0 +1,231 @@
+#p-copyright {
+  font-size: 0.7em;
+  margin:  auto auto auto auto;
+}
+
+#c-h2 {
+  font-style: inherit;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+}
+
+/* NOTE - For thumbnail caption from multiverse */
+#chai_gallery h2 {
+    -moz-pointer-events: none;
+    -webkit-pointer-events: none;
+    -ms-pointer-events: none;
+    pointer-events: none;
+    bottom: .7em;
+    font-size: 0.7em;
+    font-weight: 100;
+    left: 1em;
+    margin: 0;
+    position: absolute;
+    z-index: 1;
+    color: #ffffff;
+    letter-spacing: 0.1em;
+    line-height: 1.5;
+    text-transform: uppercase;
+
+  }
+
+#chai_gallery p {
+display: none;
+}
+
+#chai_gallery .image:hover {
+    opacity: .8;
+}
+
+#chai_gallery img {
+  filter: brightness(100%);
+}
+
+/* NOTE - this adds gradient to pop up thumbnail caption */
+#chai_gallery article:after {
+  background-image: -moz-linear-gradient(to top, rgba(10,17,25,0.35) 5%, rgba(10,17,25,0) 35%);
+  background-image: -webkit-linear-gradient(to top, rgba(10,17,25,0.35) 5%, rgba(10,17,25,0) 35%);
+  background-image: -ms-linear-gradient(to top, rgba(10,17,25,0.35) 5%, rgba(10,17,25,0) 35%);
+  background-image: linear-gradient(to top, rgba(10,17,25,0.35) 5%, rgba(10,17,25,0) 35%);
+  -moz-pointer-events: none;
+  -webkit-pointer-events: none;
+  -ms-pointer-events: none;
+  pointer-events: none;
+  background-size: cover;
+  content: '';
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+
+/*NOTE - adding this override to make style3 (WORK section) span a larger width for the images */
+#work div {
+  padding: 0;
+  margin: auto;
+  width: 100%;
+  max-width: calc(100% - 3em); /*NOTE - max width when above mobile pixel width*/
+  align: center;
+}
+
+/* Below for mobile pixel width adjustment */
+@media screen and (max-width: 480px) {
+    #work div {
+      padding: 0;
+      margin: auto;
+      width: 100%;
+      max-width: calc(100%);
+      align: center;
+    }
+}
+
+
+/* NOTE - Below for Galleria */
+/*NOTE - adding this override to make style3 (WORK section) span a larger width for the images */
+#work2 div {
+  padding: 0;
+  margin: auto;
+  width: 100%;
+  max-width: calc(100% - 2em); /*NOTE - max width when above mobile pixel width*/
+  align: center;
+}
+
+/* Below for mobile pixel width adjustment */
+@media screen and (max-width: 480px) {
+    #work2 div {
+      padding: 0;
+      margin: auto;
+      width: 100%;
+      max-width: calc(100%);
+      align: center;
+    }
+}
+
+#work2 .gallery article {
+  -moz-transition: -moz-transform 1s ease, opacity 1s ease;
+  -webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
+  -ms-transition: -ms-transform 1s ease, opacity 1s ease;
+  transition: transform 1s ease, opacity 1s ease;
+  -moz-transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+  width: 19%; /*NOTE - adjusting this to make the images 3 per row */
+  margin:  0 auto 0.8em auto; /* NOTE - adjusting to give margins between images, .1 = 1% which equates with 100 - (33%*3) as above*/
+  position: relative;
+  opacity: 1.0;
+}
+
+
+
+
+
+/* NOTE MULTIVERSE HEADER ADJUSTMENTS
+#multi_header header {
+		margin-bottom: 1em;
+	}
+
+#multi_header header p {
+			display: block;
+			margin: 1em 0 0 0;
+			padding: 0 0 0.5em 0;
+		}
+
+    #multi_header {
+  		position: fixed;
+  		z-index: 10000;
+  		left: 0;
+  		top: 0;
+  		width: 100%;
+  		background: rgba(255, 255, 255, 0.9);
+  		height: 3em;
+  		line-height: 3em;
+  		box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
+  	}
+
+  		#multi_header h1 {
+  			position: absolute;
+  			left: 1em;
+  			top: 0;
+  			height: 3em;
+  			line-height: 3em;
+  			cursor: default;
+  			font-family: ;
+  			text-transform: ;
+  			font-weight: 100;
+  			letter-spacing: 0.01em;
+  		}
+
+  			#multi_header h1 a {
+  				font-size: 1.25em;
+  			}
+
+  		#multi_header nav {
+  			position: absolute;
+  			right: 0.5em;
+  			top: 0;
+  			height: 3em;
+  			line-height: 3em;
+  		}
+
+  			#multi_header nav ul {
+  				margin: 0;
+  			}
+
+  				#multi_header nav ul li {
+  					display: inline-block;
+  					margin-left: 0.5em;
+  					font-size: 0.9em;
+  				}
+
+  					#multi_header nav ul li a {
+  						display: block;
+  						color: inherit;
+  						text-decoration: none;
+  						height: 3em;
+  						line-height: 3em;
+  						padding: 0 0.5em 0 0.5em;
+  						outline: 0;
+  					}
+
+  		@media screen and (max-width: 736px) {
+
+  			#multi_header {
+  				height: 2.5em;
+  				line-height: 2.5em;
+  			}
+
+  				#multi_header h1 {
+  					text-align: center;
+  					position: relative;
+  					left: 0;
+  					top: 0;
+  					height: 2.5em;
+  					line-height: 2.5em;
+  				}
+
+  					#multi_header h1 a {
+  						font-size: 1em;
+  					}
+
+  				#multi_header nav {
+  					display: none;
+  				}
+
+  		}
+
+      #multi_header h1, h2, h3, h4, h5, h6 {
+        font-weight: 900;
+        color: inherit;
+        letter-spacing: -0.0325em;
+      }
+
+      #multi_header h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+          color: inherit;
+          text-decoration: none;}
+
+          */
