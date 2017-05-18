@@ -9,6 +9,9 @@
 
 /* Reset */
 
+
+
+
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
 		padding: 0;
@@ -24,6 +27,7 @@
 
 	body {
 		line-height: 1;
+
 	}
 
 	ol, ul {
@@ -139,7 +143,7 @@
 	}
 
 	body {
-		background: #242629;
+		background: #ffffff; /*NOTE - background color here */
 	}
 
 		body.loading *, body.loading *:before, body.loading *:after {
@@ -167,7 +171,8 @@
 /* Type */
 
 	body, input, select, textarea {
-		color: #a0a0a1;
+		background-color: #ffffff;
+		/*color: #a0a0a1;*/
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 15pt;
 		font-weight: 300;
@@ -338,7 +343,7 @@
 	}
 
 /* Button */
-
+/*
 	input[type="submit"],
 	input[type="reset"],
 	input[type="button"],
@@ -471,10 +476,10 @@
 			-ms-pointer-events: none;
 			pointer-events: none;
 			opacity: 0.35;
-		}
+		}*/
 
 /* Form */
-
+/*
 	form {
 		margin: 0 0 2em 0;
 	}
@@ -702,9 +707,9 @@
 	.formerize-placeholder {
 		color: #707071 !important;
 		opacity: 1.0;
-	}
+	}*/
 
-/* Icon */
+/* Icon
 
 	.icon {
 		text-decoration: none;
@@ -723,7 +728,7 @@
 
 		.icon > .label {
 			display: none;
-		}
+		}*/
 
 /* List */
 
@@ -970,8 +975,7 @@
 				border-top: 0;
 			}
 
-/* Panel */
-
+/* Panel
 	.panel {
 		padding: 4em 4em 2em 4em ;
 		-moz-transform: translateY(100vh);
@@ -1097,7 +1101,7 @@
 					transform: translateY(0);
 				}
 
-		}
+		}*/
 
 /* Poptrox Popup */
 
@@ -1355,7 +1359,7 @@
 			height: 2em;
 			left: 50%;
 			line-height: 2em;
-			margin: -1em 0 0 -1em;
+			margin: 0 0 0 -1em;
 			opacity: 0;
 			position: fixed;
 			text-align: center;
@@ -1381,7 +1385,7 @@
 /* Header */
 
 	body {
-		padding: 0 0 4em 0;
+		padding: 0em 0 0 0; /* NOTE 0 0 4em 0 prior; this DOES adjust padding for top but there's something else controlling it */
 	}
 
 	#header {
@@ -1397,7 +1401,8 @@
 		-ms-user-select: none;
 		-webkit-user-select: none;
 		background: #24527a;
-		bottom: -1em;
+		bottom: auto; /*NOTE - adjusting from -1em to auto and then adding a top parameter to make this show up top */
+		top: -1em; /* NOTE - was -1em */
 		height: 5em;
 		left: 0;
 		line-height: 4em;
@@ -1480,7 +1485,7 @@
 	@media screen and (max-width: 736px) {
 
 		body {
-			padding: 4em 0 0 0;
+			padding: 1em 0 0 0; /* NOTE 1em makes mobile pixel padding perfect for the thumbnails */
 		}
 
 		#header {
@@ -1947,7 +1952,17 @@
 				}
 
 		}
+		@media screen and (max-width: 650px) { /* NOTE Adding this to make width 100% when <736px*/
 
+			#main .thumb {
+				-moz-transition-delay: 1.175s;
+				-webkit-transition-delay: 1.175s;
+				-ms-transition-delay: 1.175s;
+				transition-delay: 1.175s;
+				height: calc(40vh); /* NOTE making it larger than usual in height else proportions are off*/
+				min-height: 18em;
+				width: 100%;
+			}
 		@media screen and (max-width: 480px) {
 
 			#main .thumb {
@@ -1981,15 +1996,4 @@
 					transition-delay: 0.95s;
 				}
 
-		}
-
-/* Footer */
-
-	#footer .copyright {
-		color: #505051;
-		font-size: 0.9em;
-	}
-
-		#footer .copyright a {
-			color: inherit;
 		}

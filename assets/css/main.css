@@ -1686,6 +1686,7 @@
 				-webkit-flex-direction: column;
 				-ms-flex-direction: column;
 				flex-direction: column;
+				width:100%;
 			}
 
 				.gallery article {
@@ -1703,7 +1704,7 @@
 		top: 0;
 		width: 100%;
 		background: rgba(255, 255, 255, 0.9);
-		height: 2.5em;
+		height: 3em;
 		line-height: 3em;
 		box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
 	}
@@ -1711,9 +1712,9 @@
 		#header h1 {
 			position: absolute;
 			left: 1em;
-			top: 0;
+			top: 0em;
 			height: 2.5em;
-			line-height: 2.5em;
+			line-height: 3em; /*NOTE this vertically centered CMEDICHERLA PHOTOGRAPHY */
 			cursor: default;
 			font-family: ;
 			text-transform: ;
@@ -1730,7 +1731,7 @@
 			right: 0.5em;
 			top: 0;
 			height: 2.5em;
-			line-height: 2.5em;
+			line-height: 3em;/*NOTE this vertically centered navigation bar */
 		}
 
 			#header nav ul {
@@ -1776,6 +1777,7 @@
 				#header nav {
 					position: relative;
 					text-align: center;
+					line-height: 2.5em;/*NOTE this vertically centered navigation bar for mobile <736px*/
 				}
 
 		}
@@ -1787,7 +1789,7 @@
 		@media screen and (max-width: 736px) {
 
 			body {
-				padding-top: 2.5em;
+				padding-top: 2.5em; /*NOTE this helps with the opacity in mobile size as we scroll up but didnt solve it */
 			}
 
 		}
@@ -1828,9 +1830,10 @@
 			-moz-justify-content: center;
 			-webkit-justify-content: center;
 			-ms-justify-content: center;
-			justify-content: center;
-			text-align: ;
-			padding: 0em 20em 4em 0em;
+			justify-content: left;
+			text-align: left ;
+		padding: 0em 0em 0em 0em; /* NOTE use this to position PIXELATED MEMORIES TITLE*/
+
 		}
 
 			.main.style1 h2 {
@@ -1914,7 +1917,7 @@
 
 		.main.style3 {
 			text-align: center;
-			padding: 2em 0 1em 0; /*NOTE - Padding customization of top and bottom of work style 3 - was by default 6em 0 6em 0;*/
+			padding: 1em 0 1em 0; /*NOTE - Padding customization of top and bottom of work style 3 - was by default 6em 0 6em 0;*/
 		}
 
 			.main.style3 .content > header {
@@ -1924,8 +1927,8 @@
 			.main.style3.primary {
 			 /*NOTE - editing this to have grey background #d9dce0 - default was background white : #ffffff; */
 					/*background-color: black;*/
-					background: url("images/overlay.png"), url(backgrounder/images/patter.png) repeat top left;
-					background: white, url("backgrounder/images/patter.png");
+					background: url("images/overlay.png"), url(backgrounder/images/pattern.png) repeat top left;
+					background: white, url("backgrounder/images/pattern.png");
 					background-size: cover, cover;
 					background-attachment: fixed, fixed;
 					background-position: top left, top left;
@@ -2041,7 +2044,7 @@
 		@media screen and (max-width: 480px) {
 
 			.main > .content {
-				max-width: calc(100% - 1.5em);
+				max-width: calc(100%);
 			}
 
 		}

@@ -42,6 +42,7 @@ display: none;
   filter: brightness(100%);
 }
 
+
 /* NOTE - this adds gradient to pop up thumbnail caption */
 #chai_gallery article:after {
   background-image: -moz-linear-gradient(to top, rgba(10,17,25,0.35) 5%, rgba(10,17,25,0) 35%);
@@ -76,15 +77,45 @@ display: none;
 @media screen and (max-width: 480px) {
     #work div {
       padding: 0;
-      margin: auto;
+      margin: 0;
       width: 100%;
       max-width: calc(100%);
       align: center;
     }
+
+
+    #chai_gallery article {
+      max-width: 100%;
+      width: 100%; /*NOTE this make width 100% on mobile view*/
+    }
+
+
+body {
+  padding: 1.5em 0 0 0;
+}
+
+}
+
+/* Below for 736 pixel width adjustment */
+@media screen and (max-width: 736px) {
+    #work div {
+      padding: 0;
+      margin: auto;
+      width: 100%;
+      max-width: calc(100%);
+      align: center;
+      }
+      .gallery article {
+        width: 48%;
+    }
+
+    body {
+      padding: 1.5em 0 0 0;
+    }
 }
 
 
-/* NOTE - Below for Galleria */
+/* NOTE - Below for Galleria work2 which I don't have right now*/
 /*NOTE - adding this override to make style3 (WORK section) span a larger width for the images */
 #work2 div {
   padding: 0;
