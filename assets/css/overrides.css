@@ -146,7 +146,7 @@ body {
   -ms-transform: translateX(0);
   transform: translateX(0);
   width: 19%; /*NOTE - adjusting this to make the images 3 per row */
-  margin:  0 auto 0.8em auto; /* NOTE - adjusting to give margins between images, .1 = 1% which equates with 100 - (33%*3) as above*/
+  margin:  0 auto 0 auto; /* NOTE - adjusting to give margins between images, .1 = 1% which equates with 100 - (33%*3) as above*/
   position: relative;
   opacity: 1.0;
 }
