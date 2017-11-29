@@ -611,10 +611,13 @@
 			padding: 3.5em 2.5em 3.5em 2.5em;
 		}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 100px) {
 
 			.box {
 				padding: 1em;
+				background: #ffffff;
+				color: #39454b;
+				opacity: .8;
 			}
 
 				.box.style2 {
