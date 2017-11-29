@@ -89,7 +89,7 @@
     animation-delay: 6s;
 }
 .cb-slideshow li:nth-child(3) span {
-    background-image: url(../images/2_Fotor.jpg);
+    background-image: url(../images/6_Fotor.jpg);
     -webkit-animation-delay: 12s;
     -moz-animation-delay: 12s;
     -o-animation-delay: 12s;
@@ -121,7 +121,7 @@
     animation-delay: 30s;
 }
 .cb-slideshow li:nth-child(7) span {
-    background-image: url(../images/6_Fotor.jpg);
+    background-image: url(../images/2_Fotor.jpg);
     -webkit-animation-delay: 36s;
     -moz-animation-delay: 36s;
     -o-animation-delay: 36s;

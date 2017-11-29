@@ -93,11 +93,11 @@
 			transform: scale(1) rotate(0deg);
 		}
 
-		100% {
-			-moz-transform: scale(1) rotate(360deg);
-			-webkit-transform: scale(1) rotate(360deg);
-			-ms-transform: scale(1) rotate(360deg);
-			transform: scale(1) rotate(360deg);
+		50% {
+			-moz-transform: scale(1) rotate(180deg);
+			-webkit-transform: scale(1) rotate(180deg);
+			-ms-transform: scale(1) rotate(180deg);
+			transform: scale(1) rotate(180deg);
 		}
 	}
 
@@ -109,11 +109,11 @@
 			transform: scale(1) rotate(0deg);
 		}
 
-		100% {
-			-moz-transform: scale(1) rotate(360deg);
-			-webkit-transform: scale(1) rotate(360deg);
-			-ms-transform: scale(1) rotate(360deg);
-			transform: scale(1) rotate(360deg);
+		50% {
+			-moz-transform: scale(1) rotate(180deg);
+			-webkit-transform: scale(1) rotate(180deg);
+			-ms-transform: scale(1) rotate(180deg);
+			transform: scale(1) rotate(180deg);
 		}
 	}
 
@@ -125,11 +125,11 @@
 			transform: scale(1) rotate(0deg);
 		}
 
-		100% {
-			-moz-transform: scale(1) rotate(360deg);
-			-webkit-transform: scale(1) rotate(360deg);
-			-ms-transform: scale(1) rotate(360deg);
-			transform: scale(1) rotate(360deg);
+		50% {
+			-moz-transform: scale(1) rotate(180deg);
+			-webkit-transform: scale(1) rotate(180deg);
+			-ms-transform: scale(1) rotate(180deg);
+			transform: scale(1) rotate(180deg);
 		}
 	}
 
@@ -141,11 +141,11 @@
 			transform: scale(1) rotate(0deg);
 		}
 
-		100% {
-			-moz-transform: scale(1) rotate(360deg);
-			-webkit-transform: scale(1) rotate(360deg);
-			-ms-transform: scale(1) rotate(360deg);
-			transform: scale(1) rotate(360deg);
+		50% {
+			-moz-transform: scale(1) rotate(180deg);
+			-webkit-transform: scale(1) rotate(180deg);
+			-ms-transform: scale(1) rotate(180deg);
+			transform: scale(1) rotate(180deg);
 		}
 	}
 
@@ -156,17 +156,17 @@
 			opacity: 0;
 		}
 
-		100% {
+	50% {
 			opacity: 1;
 		}
 	}
 
 	@-webkit-keyframes spinner-show {
 		0% {
-			opacity: 0;
+			opacity: 1;
 		}
 
-		100% {
+	50% {
 			opacity: 1;
 		}
 	}
@@ -176,7 +176,7 @@
 			opacity: 0;
 		}
 
-		100% {
+		50% {
 			opacity: 1;
 		}
 	}
@@ -186,7 +186,7 @@
 			opacity: 0;
 		}
 
-		100% {
+		50% {
 			opacity: 1;
 		}
 	}
@@ -619,6 +619,7 @@
 
 				.box.style2 {
 					padding: 1.5em 1.25em 1.5em 1.25em;
+					background: url(""), url("../../images/intro.jpg");
 					background-color: rgba(255, 255, 255, 0.9);
 				}
 
@@ -1870,6 +1871,7 @@
 			justify-content: center;
 			padding: 3em 0 3em 0;
 			overflow: hidden;
+			background: url(""), url("../../images/intro.jpg");
 		}
 
 			.main.style2 > .content {
@@ -2172,10 +2174,10 @@
 /* One */
 
 	#one {
-		background: url("images/overlay1.png"), url("../../images/two.jpg");
+		background: url("images/overlay1.png"), url("../../images/chaitanyatimelapse.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
-		background-position: top left, center center;*/
+		background-position: center;
 	}
 
 /* Two */
