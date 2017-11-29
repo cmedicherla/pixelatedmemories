@@ -599,8 +599,8 @@
 	.box {
 		background: #ffffff;
 		color: #39454b;
-		padding: 2em;
-		opacity: .8;
+		padding: 1em;
+		opacity: .9;
 	}
 
 		.box > :last-child {
@@ -617,11 +617,11 @@
 				padding: 1em;
 				background: #ffffff;
 				color: #39454b;
-				opacity: .8;
+				opacity: .9;
 			}
 
 				.box.style2 {
-					padding: 1.5em 1.25em 1.5em 1.25em;
+					padding: 1.5em 1em 1.5em 1em;
 					background: url(""), url("../../images/intro.jpg");
 					background-color: rgba(255, 255, 255, 0.9);
 				}
